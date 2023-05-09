@@ -1,0 +1,115 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  height: 100vh;
+  display: flex;
+  background-color: #121111;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #121111;
+}
+
+form {
+  padding: 0px 10px;
+}
+
+label {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+input {
+  margin-right: 40px;
+  padding: 6px 2px 6px 15px;
+  border: 1px solid rgb(102, 100, 100, 0.5);
+  border-radius: 4px;
+}
+
+button {
+  padding: 6px 12px;
+  background-color: #5bcf99;
+  border: 1px solid rgb(102, 100, 100, 0.5);
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.game {
+  display: flex;
+  width: 100vh;
+  margin: auto;
+  padding: 30px 30px;
+  background-color: rgb(252, 247, 196);
+  border-radius: 6px;
+}
+
+.game-field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vh;
+  margin-right: 40px
+}
+
+.card {
+  position: relative;
+  padding-top: 100%;
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background-color: #5bcf99;
+  color: rgb(19, 17, 17);
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px rgb(102, 100, 100, 0.7);
+  cursor: pointer;
+
+}
+
+.card-back {
+  background-color: rgb(247, 64, 64);
+  color: transparent;
+}
+
+.card-success {
+  background-color: #226646;
+  transform: scale(0.96);
+}
+
+.card-number {
+  margin: auto;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.turned-card .card-back {
+  background-color: transparent;
+}
+
+.options {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.timer {
+  margin: 0;
+  text-align: center;
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.notification {
+  font-size: 60px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+}
